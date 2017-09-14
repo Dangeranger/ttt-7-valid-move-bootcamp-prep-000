@@ -1,10 +1,10 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   move = board[index]
-  (!valid?(move) && 0 <= index) ? true : false
+  (invalid?(move) && 0 <= index) ? true : false
 end
 
-def valid?(move)
+def invalid?(move)
   position_taken?(move) || move.nil?
 end
 
