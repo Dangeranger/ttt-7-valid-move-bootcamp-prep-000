@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   move = board[index]
-  return false if valid?(move) || index < 0
+  return true unless valid?(move) || index > 0
   true
 end
 
