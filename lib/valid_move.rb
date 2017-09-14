@@ -10,6 +10,5 @@ def valid?(board, index)
 end
 
 def position_taken?(move)
-  return true if move == 'X' || move == 'O'
-  false
+  (move == 'X' || move == 'O') ? true : false
 end
