@@ -5,7 +5,7 @@ def valid_move?(board, index)
   true
 end
 
-def valid?(board, index)
+def valid?(move)
   position_taken?(move) || board[index].nil? || index < 0
 end
 
